@@ -1,0 +1,124 @@
+[
+      {
+        "category": "Signup & Login",
+        "stories": [
+          {
+            "id": 1,
+            "title": "Sign up with Email",
+            "description": "As a new user, I want to sign up using my email so that I can create an account.",
+            "acceptance_criteria": [
+              "System should validate the email format.",
+              "If email is already registered, prompt the user to log in.",
+              "User should be able to set a password (6-24 characters, 1 number required)."
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Sign up with Google",
+            "description": "As a new user, I want to sign up using Google so that I can quickly create an account.",
+            "acceptance_criteria": [
+              "Google authentication should be available.",
+              "If the user’s Google account is already linked, direct them to login."
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Log in with Email",
+            "description": "As a returning user, I want to log in with my email so that I can access my account.",
+            "acceptance_criteria": [
+              "System should validate credentials.",
+              "If incorrect, prompt the user with an error message."
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Log in with Google",
+            "description": "As a returning user, I want to log in using Google so that I can access my account without remembering credentials."
+          },
+          {
+            "id": 5,
+            "title": "Reset Password",
+            "description": "As a user, I want to reset my password if I forget it so that I can regain access to my account.",
+            "acceptance_criteria": [
+              "User should be able to request a password reset link via email.",
+              "Link should expire after a defined period."
+            ]
+          }
+        ]
+      },
+      {
+        "category": "AI-Powered Features",
+        "stories": [
+          {
+            "id": 6,
+            "title": "AI answers HR-related questions",
+            "description": "As a user, I want to ask HR-related questions so that I can get AI-generated responses based on company policies.",
+            "acceptance_criteria": [
+              "System should fetch relevant policy details using Retrieval-Augmented Generation (RAG)."
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Request vacation time",
+            "description": "As a user, I want to request vacation time so that I can manage my leaves through the HR backend.",
+            "acceptance_criteria": [
+              "System should generate a confirmation or failure response.",
+              "If successful, provide a link to Workday for tracking."
+            ]
+          },
+          {
+            "id": 8,
+            "title": "AI processes uploaded images",
+            "description": "As a user, I want the AI to understand my uploaded images so that I can interact with visual content.",
+            "acceptance_criteria": [
+              "AI should process text and vision-based queries."
+            ]
+          },
+          {
+            "id": 9,
+            "title": "Fine-tune AI model",
+            "description": "As a user, I want to fine-tune the AI model based on my company’s data so that responses are tailored to my organization."
+          }
+        ]
+      },
+      {
+        "category": "AI Performance & Compliance",
+        "stories": [
+          {
+            "id": 10,
+            "title": "Prevent prohibited AI responses",
+            "description": "As an admin, I want to ensure AI responses do not contain prohibited content so that we comply with company policies.",
+            "acceptance_criteria": [
+              "AI should refuse to generate harmful content and provide a Terms of Service link instead."
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Track AI accuracy and performance",
+            "description": "As an admin, I want to track AI accuracy and performance so that I can improve the model’s response quality."
+          },
+          {
+            "id": 12,
+            "title": "AI uses preferred pronouns",
+            "description": "As a user, I want the AI to use my preferred pronouns so that responses feel personalized."
+          }
+        ]
+      },
+      {
+        "category": "Error Handling & Mitigation",
+        "stories": [
+          {
+            "id": 13,
+            "title": "Retry AI response generation",
+            "description": "As a user, I want to see a retry button if AI fails to generate a response so that I can try again."
+          },
+          {
+            "id": 14,
+            "title": "Notify user on request failure",
+            "description": "As a user, I want to be notified if my request fails due to a backend error so that I can take alternative action."
+          }
+        ]
+      }
+    ]
+
+  
